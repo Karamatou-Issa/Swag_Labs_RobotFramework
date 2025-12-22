@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4 (Python 3.12.0 on win32)" generated="2025-12-22T21:20:37.650149" rpa="false" schemaversion="5">
+<suite id="s1" name="Swaglabs.project" source="C:\Users\clems\Swaglabs.project">
+<suite id="s1-s1" name="Mes suites Tests" source="C:\Users\clems\Swaglabs.project\Mes_suites_Tests">
+<suite id="s1-s1-s1" name="TC02 Connexion Invalide" source="C:\Users\clems\Swaglabs.project\Mes_suites_Tests\TC02_Connexion_Invalide.robot">
+<test id="s1-s1-s1-t1" name="TC02connexion_invalie" line="8">
+<kw name="Test connexion invalide" owner="Keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-12-22T21:20:38.769604" level="INFO">Opening browser 'firefox' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${Swaglab}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-12-22T21:20:38.768583" elapsed="15.803518"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>id=user-name</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-22T21:20:54.573179" elapsed="0.404508"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-22T21:20:54.988796" level="INFO">Typing text 'PAPA' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>${Wronguser}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-22T21:20:54.977687" elapsed="0.498626"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>id=password</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-22T21:20:55.477327" elapsed="0.198368"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-12-22T21:20:55.677692" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2025-12-22T21:20:55.731996" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id=password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-22T21:20:55.676697" elapsed="0.144493"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-12-22T21:20:55.835288" level="INFO">Clicking button 'id=login-button'.</msg>
+<arg>id=login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-22T21:20:55.822701" elapsed="0.228414"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-22T21:20:56.080749" level="INFO">Current page contains text 'Epic sadface: Username and password do not match any user in this service'.</msg>
+<arg>Epic sadface: Username and password do not match any user in this service</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-12-22T21:20:56.052113" elapsed="0.028636"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-12-22T21:20:56.081750" elapsed="5.936387"/>
+</kw>
+<arg>${Wronguser}</arg>
+<status status="PASS" start="2025-12-22T21:20:38.766348" elapsed="23.253299"/>
+</kw>
+<status status="PASS" start="2025-12-22T21:20:38.762829" elapsed="23.256818"/>
+</test>
+<status status="PASS" start="2025-12-22T21:20:37.802033" elapsed="24.222690"/>
+</suite>
+<status status="PASS" start="2025-12-22T21:20:37.795225" elapsed="24.235162"/>
+</suite>
+<status status="PASS" start="2025-12-22T21:20:37.679458" elapsed="24.354238"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Swaglabs.project" id="s1" pass="1" fail="0" skip="0">Swaglabs.project</stat>
+<stat name="Mes suites Tests" id="s1-s1" pass="1" fail="0" skip="0">Swaglabs.project.Mes suites Tests</stat>
+<stat name="TC02 Connexion Invalide" id="s1-s1-s1" pass="1" fail="0" skip="0">Swaglabs.project.Mes suites Tests.TC02 Connexion Invalide</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,5 +1,9 @@
 *** Settings ***
+Resource            ..//Ressources/Keywords.robot
+Resource            ..//Ressources/Variables.robot
+Library             SeleniumLibrary
+
 
 *** Test Cases ***
-first
-    Log    Hello World
+TC02connexion_invalie
+    Test connexion invalide                    ${Wronguser}
